@@ -1,7 +1,13 @@
+using DrumkitStore.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<DrumkityDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
+//do naszego serwisu dodajemy ten context co przed chwila zbudowalismy z uzyciem sql server i potem jego konfiguracja zbudowana w jsonie
 
 var app = builder.Build();
 
@@ -22,6 +28,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Drumkit}/{action=Index}/{id?}");
 
 app.Run();
