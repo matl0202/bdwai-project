@@ -1,0 +1,111 @@
+[
+  {
+    "ContainingType": "DrumkitStore.Controllers.Api.DrumkitsApiController",
+    "Method": "GetDrumkits",
+    "RelativePath": "api/DrumkitsApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[DrumkitStore.Models.Drumkit, DrumkitStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DrumkitStore.Controllers.Api.DrumkitsApiController",
+    "Method": "CreateDrumkit",
+    "RelativePath": "api/DrumkitsApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "DrumkitStore.Models.Drumkit",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DrumkitStore.Models.Drumkit",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DrumkitStore.Controllers.Api.DrumkitsApiController",
+    "Method": "GetDrumkit",
+    "RelativePath": "api/DrumkitsApi/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DrumkitStore.Models.Drumkit",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DrumkitStore.Controllers.Api.DrumkitsApiController",
+    "Method": "UpdateDrumkit",
+    "RelativePath": "api/DrumkitsApi/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "DrumkitStore.Models.Drumkit",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DrumkitStore.Controllers.Api.DrumkitsApiController",
+    "Method": "DeleteDrumkit",
+    "RelativePath": "api/DrumkitsApi/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

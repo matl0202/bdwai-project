@@ -1,21 +1,31 @@
-using DrumkitStore.Models;
+﻿using DrumkitStore.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Dodaj usługi MVC
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<DrumkityDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
-//do naszego serwisu dodajemy ten context co przed chwila zbudowalismy z uzyciem sql server i potem jego konfiguracja zbudowana w jsonie
+// Dodaj DbContext (upewnij się, że jest poprawny)
+builder.Services.AddDbContext<DrumkityDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Dodaj uwierzytelnianie i autoryzację
+builder.Services.AddAuthentication("Cookies")
+    .AddCookie("Cookies", options =>
+    {
+        options.LoginPath = "/Account/Login"; // Ścieżka do strony logowania
+        options.AccessDeniedPath = "/Account/AccessDenied"; // Ścieżka, jeśli brak uprawnień
+    });
+
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Middleware
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -24,10 +34,11 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
+app.UseAuthentication(); //Uwierzytelnianie
+app.UseAuthorization(); //Autoryzacja
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Drumkit}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

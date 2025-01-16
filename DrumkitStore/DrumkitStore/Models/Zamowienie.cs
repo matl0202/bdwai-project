@@ -1,33 +1,20 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace DrumkitStore.Models
 {
     public class Zamowienie
     {
-        [Key]
         public int Id { get; set; }
+        public DateTime DataZamowienia { get; set; }
 
+        [Required(ErrorMessage = "Identyfikator użytkownika jest wymagany.")]
+        public string UserId { get; set; } = string.Empty;
 
-
-
-        public int UserId { get; set; }
-
-        [ForeignKey("UserId")]
-        public User User { get; set; }
-
-
-
-
+        //jaki drumkit zamowilismy
+        [Required(ErrorMessage = "Drumkit jest wymagany.")]
         public int DrumkitId { get; set; }
 
-        [ForeignKey("DrumkitId")]
-        public Drumkit Drumkit { get; set; }
-
-
-
-
-        [Column(TypeName = "datetime")]
-        public DateTime ZamowienieDate { get; set; } = DateTime.Now;
+      
+        public virtual Drumkit? Drumkit { get; set; }
     }
 }

@@ -1,0 +1,29 @@
+﻿@model IEnumerable<DrumkitStore.Models.Drumkit>
+
+<h1>Drumkits</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nazwa</th>
+            <th>Cena</th>
+            <th>Kategoria</th>
+            <th>Akcje</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Nazwa</td>
+                <td>@item.Cena</td>
+                <td>@item.Kategoria?.Nazwa</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Drumkits", new { id = item.Id })">Edytuj</a> |
+                    <a href="@Url.Action("Delete", "Drumkits", new { id = item.Id })">Usuń</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="@Url.Action("Create", "Drumkits")" class="btn btn-primary">Dodaj nowy drumkit</a>

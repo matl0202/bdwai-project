@@ -1,0 +1,115 @@
+﻿using DrumkitStore.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace DrumkitStore.Controllers
+{
+    [Authorize]
+    public class DrumkitsController : Controller
+    {
+        private readonly DrumkityDbContext _db;
+
+        //Dodawanie zależności przez konstruktor
+        public DrumkitsController(DrumkityDbContext db)
+        {
+            _db = db;
+        }
+
+        [AllowAnonymous]
+        public ActionResult Index()
+        {
+            var drumkits = _db.Drumkits.Include(d => d.Kategoria).ToList();
+            return View(drumkits);
+        }
+
+
+        [HttpGet]
+        [Authorize(Roles = "Admin")]
+        public ActionResult Create()
+        {
+            ViewBag.Kategorie = _db.Kategorie.ToList();
+
+            //logowanie danych kategorii
+            Console.WriteLine($"Kategorie: {string.Join(", ", _db.Kategorie.Select(k => k.Nazwa))}");
+
+            return View();
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public ActionResult Create(Drumkit model)
+        {
+            //loguj przesyłane dane
+            Console.WriteLine($"Dane przesłane do kontrolera:");
+            Console.WriteLine($"Nazwa: {model.Nazwa}");
+            Console.WriteLine($"Cena: {model.Cena}");
+            Console.WriteLine($"KategoriaId: {model.KategoriaId}");
+
+            //Model state do errorowania
+            if (!ModelState.IsValid)
+            {
+                Console.WriteLine("ModelState jest nieprawidłowy. Oto błędy walidacji:");
+                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    Console.WriteLine($"Błąd walidacji: {error.ErrorMessage}");
+                }
+
+                //lista kategorii do widoku ponownie
+                ViewBag.Kategorie = _db.Kategorie.ToList();
+                return View(model);
+            }
+
+            //Dodaj drumkit do bazy
+            _db.Drumkits.Add(model);
+            _db.SaveChanges();
+
+            Console.WriteLine("Drumkit dodany pomyślnie.");
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        [Authorize(Roles = "Admin")]
+        public ActionResult Edit(int id)
+        {
+            
+            var drumkit = _db.Drumkits.Find(id);//pobieranie drumkita na podstawie id
+            if (drumkit == null)
+            {
+                return NotFound(); //jesli nie znajdzie to blad
+            }
+
+            
+            ViewBag.Kategorie = _db.Kategorie.ToList();//pobieranie listy kategori i wrzucanie do viewbaga
+
+            return View(drumkit); //przekazanie drumkitu do naszego widoku
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public ActionResult Edit(Drumkit model)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Entry(model).State = EntityState.Modified;
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(model);
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult Delete(int id)
+        {
+            var drumkit = _db.Drumkits.Find(id);
+            if (drumkit != null)
+            {
+                _db.Drumkits.Remove(drumkit);
+                _db.SaveChanges();
+            }
+            return RedirectToAction("Index");
+        }
+    }
+}
+
+

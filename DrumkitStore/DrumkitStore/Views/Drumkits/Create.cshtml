@@ -1,0 +1,30 @@
+﻿@model DrumkitStore.Models.Drumkit
+
+<h1>Dodaj Drumkit</h1>
+
+@using (Html.BeginForm("Create", "Drumkits", FormMethod.Post)) // Poprawna deklaracja formularza
+{
+    <div class="form-group">
+        <label for="Nazwa">Nazwa</label>
+        @Html.TextBoxFor(m => m.Nazwa, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Nazwa)
+    </div>
+
+    <div class="form-group">
+        <label for="Cena">Cena</label>
+        @Html.TextBoxFor(m => m.Cena, new { @class = "form-control", @type = "number", @step = "0.01" })
+        @Html.ValidationMessageFor(m => m.Cena)
+    </div>
+
+    <div class="form-group">
+        <label for="KategoriaId">Kategoria</label>
+        @Html.DropDownListFor(
+                m => m.KategoriaId,
+                new SelectList(ViewBag.Kategorie, "Id", "Nazwa"),
+                "Wybierz kategorię",
+                new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.KategoriaId)
+    </div>
+
+    <button type="submit" class="btn btn-primary">Zapisz</button>
+}

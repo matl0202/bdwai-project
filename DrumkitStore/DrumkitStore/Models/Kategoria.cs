@@ -1,19 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using DrumkitStore.Models;
 using System.ComponentModel.DataAnnotations;
 
 namespace DrumkitStore.Models
 {
     public class Kategoria
     {
-        [Key]
         public int Id { get; set; }
-
-        [Column(TypeName = "nvarchar(100)")]
+        [Required]
         public string Nazwa { get; set; }
-
-
-
-
-        public List<Drumkit> Drumkits { get; set; }
+        public virtual ICollection<Drumkit> Drumkits { get; set; }
     }
+
 }

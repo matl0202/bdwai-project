@@ -17,7 +17,7 @@ namespace DrumkitStore.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.7")
+                .HasAnnotation("ProductVersion", "9.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -38,17 +38,13 @@ namespace DrumkitStore.Migrations
 
                     b.Property<string>("Nazwa")
                         .IsRequired()
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("Opis")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("KategoriaId");
 
-                    b.ToTable("Drumkity");
+                    b.ToTable("Drumkits");
                 });
 
             modelBuilder.Entity("DrumkitStore.Models.Kategoria", b =>
@@ -61,36 +57,11 @@ namespace DrumkitStore.Migrations
 
                     b.Property<string>("Nazwa")
                         .IsRequired()
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Kategorie");
-                });
-
-            modelBuilder.Entity("DrumkitStore.Models.User", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("Rola")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("DrumkitStore.Models.Zamowienie", b =>
@@ -101,20 +72,19 @@ namespace DrumkitStore.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<DateTime>("DataZamowienia")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("DrumkitId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("ZamowienieDate")
-                        .HasColumnType("datetime");
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("DrumkitId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Zamowienia");
                 });
@@ -135,18 +105,10 @@ namespace DrumkitStore.Migrations
                     b.HasOne("DrumkitStore.Models.Drumkit", "Drumkit")
                         .WithMany()
                         .HasForeignKey("DrumkitId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("DrumkitStore.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Drumkit");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("DrumkitStore.Models.Kategoria", b =>
