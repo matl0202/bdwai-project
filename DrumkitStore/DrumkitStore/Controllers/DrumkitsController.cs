@@ -11,7 +11,6 @@ namespace DrumkitStore.Controllers
     {
         private readonly DrumkityDbContext _db;
 
-        //Dodawanie zależności przez konstruktor
         public DrumkitsController(DrumkityDbContext db)
         {
             _db = db;
@@ -25,49 +24,50 @@ namespace DrumkitStore.Controllers
         }
 
 
+
         [HttpGet]
         [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
             ViewBag.Kategorie = _db.Kategorie.ToList();
-
-            //logowanie danych kategorii
-            Console.WriteLine($"Kategorie: {string.Join(", ", _db.Kategorie.Select(k => k.Nazwa))}");
+            Console.WriteLine($"Kategorie: {string.Join(", ", _db.Kategorie.Select(k => k.Nazwa))}");            //logowanie danych kategorii
 
             return View();
         }
+
+
 
         [HttpPost]
         [Authorize(Roles = "Admin")]
         public ActionResult Create(Drumkit model)
         {
-            //loguj przesyłane dane
+            //do errorow znow
             Console.WriteLine($"Dane przesłane do kontrolera:");
             Console.WriteLine($"Nazwa: {model.Nazwa}");
             Console.WriteLine($"Cena: {model.Cena}");
             Console.WriteLine($"KategoriaId: {model.KategoriaId}");
 
-            //Model state do errorowania
-            if (!ModelState.IsValid)
+            if (!ModelState.IsValid)            //Model state do errorowania
             {
-                Console.WriteLine("ModelState jest nieprawidłowy. Oto błędy walidacji:");
+                Console.WriteLine("ModelState nieprawidlowy. Błąd valid:");
                 foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
                 {
-                    Console.WriteLine($"Błąd walidacji: {error.ErrorMessage}");
+                    Console.WriteLine($"Błąd valid: {error.ErrorMessage}");
                 }
 
-                //lista kategorii do widoku ponownie
                 ViewBag.Kategorie = _db.Kategorie.ToList();
                 return View(model);
             }
 
-            //Dodaj drumkit do bazy
             _db.Drumkits.Add(model);
             _db.SaveChanges();
 
             Console.WriteLine("Drumkit dodany pomyślnie.");
             return RedirectToAction("Index");
         }
+
+
+
         [HttpGet]
         [Authorize(Roles = "Admin")]
         public ActionResult Edit(int id)
@@ -79,7 +79,6 @@ namespace DrumkitStore.Controllers
                 return NotFound(); //jesli nie znajdzie to blad
             }
 
-            
             ViewBag.Kategorie = _db.Kategorie.ToList();//pobieranie listy kategori i wrzucanie do viewbaga
 
             return View(drumkit); //przekazanie drumkitu do naszego widoku

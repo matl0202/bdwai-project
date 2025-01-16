@@ -1,94 +1,85 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\",
+  "WorkspaceRootPath": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\controllers\\drumkitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\controllers\\drumkitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\views\\drumkits\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\drumkits\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\views\\zamowienia\\mojezamowienia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\zamowienia\\mojezamowienia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\views\\zamowienia\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\zamowienia\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\views\\drumkits\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\drumkits\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\views\\drumkits\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\drumkits\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\views\\drumkits\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\drumkits\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\models\\kategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\models\\kategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\models\\drumkitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\models\\drumkitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\models\\drumkit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\models\\drumkit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\controllers\\zamowieniacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\controllers\\zamowieniacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\controllers\\zamowieniacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\controllers\\drumkitsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\controllers\\drumkitsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\controllers\\drumkitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\controllers\\drumkitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\drumkitstore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\drumkitstore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\views\\drumkits\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\drumkits\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\views\\drumkits\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\drumkits\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\models\\zamowienie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\views\\zamowienia\\mojezamowienia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\zamowienia\\mojezamowienia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\views\\zamowienia\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\zamowienia\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\views\\drumkits\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\drumkits\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\views\\drumkits\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\drumkits\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\models\\zamowienie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\models\\zamowienie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|e:\\githubdekstop\\bdwai-project\\drumkitstore\\drumkitstore\\migrations\\20250116044938_pozmianach4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\migrations\\20250116044938_pozmianach4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\models\\drumkitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\models\\drumkitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\models\\drumkit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\models\\drumkit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|c:\\users\\twnv\\source\\repos\\drumkitstore\\drumkitstore\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{32A41B71-6A6E-408C-9955-F20A61563925}|DrumkitStore\\DrumkitStore.csproj|solutionrelative:drumkitstore\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TWNV\\Desktop\\HotelReservationApp-main\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,272 +89,267 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "DrumkitStore\\Views\\_ViewImports.cshtml",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "DrumkitStore\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-16T03:30:11.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "DrumkitStore\\Views\\_ViewStart.cshtml",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "DrumkitStore\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-16T03:12:33.575Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\appsettings.json",
               "RelativeDocumentMoniker": "DrumkitStore\\appsettings.json",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\appsettings.json",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\appsettings.json",
               "RelativeToolTip": "DrumkitStore\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-16T02:50:27.31Z"
+              "WhenOpened": "2025-01-16T02:50:27.31Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "DrumkitStore\\Views\\Account\\Login.cshtml",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "DrumkitStore\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-16T03:53:39.36Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Kategoria.cs",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Models\\Kategoria.cs",
-              "RelativeDocumentMoniker": "DrumkitStore\\Models\\Kategoria.cs",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Models\\Kategoria.cs",
-              "RelativeToolTip": "DrumkitStore\\Models\\Kategoria.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Program.cs",
+              "RelativeDocumentMoniker": "DrumkitStore\\Program.cs",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Program.cs",
+              "RelativeToolTip": "DrumkitStore\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAwwCQAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T02:48:25.138Z"
+              "WhenOpened": "2025-01-16T02:57:32.382Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "DrumkityDbContext.cs",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Models\\DrumkityDbContext.cs",
-              "RelativeDocumentMoniker": "DrumkitStore\\Models\\DrumkityDbContext.cs",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Models\\DrumkityDbContext.cs",
-              "RelativeToolTip": "DrumkitStore\\Models\\DrumkityDbContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAwwBIAAABBAAAAAAAAAA==",
+              "Title": "Zamowienie.cs",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Models\\Zamowienie.cs",
+              "RelativeDocumentMoniker": "DrumkitStore\\Models\\Zamowienie.cs",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Models\\Zamowienie.cs",
+              "RelativeToolTip": "DrumkitStore\\Models\\Zamowienie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T02:49:55.021Z"
+              "WhenOpened": "2025-01-16T19:47:11.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Models\\User.cs",
+              "RelativeDocumentMoniker": "DrumkitStore\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Models\\User.cs",
+              "RelativeToolTip": "DrumkitStore\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T19:44:35.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DrumkityDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Models\\DrumkityDbContext.cs",
+              "RelativeDocumentMoniker": "DrumkitStore\\Models\\DrumkityDbContext.cs",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Models\\DrumkityDbContext.cs",
+              "RelativeToolTip": "DrumkitStore\\Models\\DrumkityDbContext.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwBkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T19:47:54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Drumkit.cs",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Models\\Drumkit.cs",
+              "RelativeDocumentMoniker": "DrumkitStore\\Models\\Drumkit.cs",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Models\\Drumkit.cs",
+              "RelativeToolTip": "DrumkitStore\\Models\\Drumkit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T02:46:54.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "DrumkitStore\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "DrumkitStore\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T18:44:17.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "DrumkitStore\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "DrumkitStore\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T03:53:39.36Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ZamowieniaController.cs",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Controllers\\ZamowieniaController.cs",
+              "RelativeDocumentMoniker": "DrumkitStore\\Controllers\\ZamowieniaController.cs",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Controllers\\ZamowieniaController.cs",
+              "RelativeToolTip": "DrumkitStore\\Controllers\\ZamowieniaController.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAmwIUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T19:54:23.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "DrumkitStore\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "DrumkitStore\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T19:54:01.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Drumkits\\Create.cshtml",
+              "RelativeDocumentMoniker": "DrumkitStore\\Views\\Drumkits\\Create.cshtml",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Drumkits\\Create.cshtml",
+              "RelativeToolTip": "DrumkitStore\\Views\\Drumkits\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T03:11:41.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Drumkits\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DrumkitStore\\Views\\Drumkits\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Drumkits\\Delete.cshtml",
+              "RelativeToolTip": "DrumkitStore\\Views\\Drumkits\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T03:14:16.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DrumkitsController.cs",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Controllers\\DrumkitsController.cs",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Controllers\\DrumkitsController.cs",
               "RelativeDocumentMoniker": "DrumkitStore\\Controllers\\DrumkitsController.cs",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Controllers\\DrumkitsController.cs",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Controllers\\DrumkitsController.cs",
               "RelativeToolTip": "DrumkitStore\\Controllers\\DrumkitsController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAiwD4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAcwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T02:51:37.894Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MojeZamowienia.cshtml",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\Zamowienia\\MojeZamowienia.cshtml",
-              "RelativeDocumentMoniker": "DrumkitStore\\Views\\Zamowienia\\MojeZamowienia.cshtml",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\Zamowienia\\MojeZamowienia.cshtml",
-              "RelativeToolTip": "DrumkitStore\\Views\\Zamowienia\\MojeZamowienia.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-16T03:15:36.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\Zamowienia\\Create.cshtml",
-              "RelativeDocumentMoniker": "DrumkitStore\\Views\\Zamowienia\\Create.cshtml",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\Zamowienia\\Create.cshtml",
-              "RelativeToolTip": "DrumkitStore\\Views\\Zamowienia\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-16T04:47:58.477Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "DrumkitStore\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "DrumkitStore\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-16T03:13:05.785Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\Drumkits\\Edit.cshtml",
-              "RelativeDocumentMoniker": "DrumkitStore\\Views\\Drumkits\\Edit.cshtml",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\Drumkits\\Edit.cshtml",
-              "RelativeToolTip": "DrumkitStore\\Views\\Drumkits\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-16T03:13:56.736Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\Drumkits\\Index.cshtml",
-              "RelativeDocumentMoniker": "DrumkitStore\\Views\\Drumkits\\Index.cshtml",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\Drumkits\\Index.cshtml",
-              "RelativeToolTip": "DrumkitStore\\Views\\Drumkits\\Index.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-16T03:11:18.998Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\Drumkits\\Delete.cshtml",
-              "RelativeDocumentMoniker": "DrumkitStore\\Views\\Drumkits\\Delete.cshtml",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\Drumkits\\Delete.cshtml",
-              "RelativeToolTip": "DrumkitStore\\Views\\Drumkits\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAGAAAAAAAAAA==",
+              "Title": "MojeZamowienia.cshtml",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Zamowienia\\MojeZamowienia.cshtml",
+              "RelativeDocumentMoniker": "DrumkitStore\\Views\\Zamowienia\\MojeZamowienia.cshtml",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Zamowienia\\MojeZamowienia.cshtml",
+              "RelativeToolTip": "DrumkitStore\\Views\\Zamowienia\\MojeZamowienia.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-16T03:14:16.031Z"
+              "WhenOpened": "2025-01-16T03:15:36.608Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\Drumkits\\Create.cshtml",
-              "RelativeDocumentMoniker": "DrumkitStore\\Views\\Drumkits\\Create.cshtml",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Views\\Drumkits\\Create.cshtml",
-              "RelativeToolTip": "DrumkitStore\\Views\\Drumkits\\Create.cshtml",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Zamowienia\\Create.cshtml",
+              "RelativeDocumentMoniker": "DrumkitStore\\Views\\Zamowienia\\Create.cshtml",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Zamowienia\\Create.cshtml",
+              "RelativeToolTip": "DrumkitStore\\Views\\Zamowienia\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-16T03:11:41.837Z"
+              "WhenOpened": "2025-01-16T20:00:10.688Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Drumkit.cs",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Models\\Drumkit.cs",
-              "RelativeDocumentMoniker": "DrumkitStore\\Models\\Drumkit.cs",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Models\\Drumkit.cs",
-              "RelativeToolTip": "DrumkitStore\\Models\\Drumkit.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T02:46:54.843Z"
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Drumkits\\Index.cshtml",
+              "RelativeDocumentMoniker": "DrumkitStore\\Views\\Drumkits\\Index.cshtml",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Drumkits\\Index.cshtml",
+              "RelativeToolTip": "DrumkitStore\\Views\\Drumkits\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T21:48:24.911Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ZamowieniaController.cs",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Controllers\\ZamowieniaController.cs",
-              "RelativeDocumentMoniker": "DrumkitStore\\Controllers\\ZamowieniaController.cs",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Controllers\\ZamowieniaController.cs",
-              "RelativeToolTip": "DrumkitStore\\Controllers\\ZamowieniaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T03:04:34.865Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DrumkitsApiController.cs",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Controllers\\DrumkitsApiController.cs",
-              "RelativeDocumentMoniker": "DrumkitStore\\Controllers\\DrumkitsApiController.cs",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Controllers\\DrumkitsApiController.cs",
-              "RelativeToolTip": "DrumkitStore\\Controllers\\DrumkitsApiController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwA8AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T03:07:30.948Z"
+              "DocumentIndex": 11,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Drumkits\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DrumkitStore\\Views\\Drumkits\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Drumkits\\Edit.cshtml",
+              "RelativeToolTip": "DrumkitStore\\Views\\Drumkits\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T03:13:56.736Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "DrumkitStore\\Controllers\\AccountController.cs",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "DrumkitStore\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T03:06:24.532Z"
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DrumkitStore\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DrumkitStore\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T03:13:05.785Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "DrumkitStore.csproj",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\DrumkitStore.csproj",
-              "RelativeDocumentMoniker": "DrumkitStore\\DrumkitStore.csproj",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\DrumkitStore.csproj",
-              "RelativeToolTip": "DrumkitStore\\DrumkitStore.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-16T04:21:21.983Z"
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "DrumkitStore\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "DrumkitStore\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-16T22:14:24.897Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Program.cs",
-              "RelativeDocumentMoniker": "DrumkitStore\\Program.cs",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Program.cs",
-              "RelativeToolTip": "DrumkitStore\\Program.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T02:57:32.382Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "20250116044938_pozmianach4.cs",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Migrations\\20250116044938_pozmianach4.cs",
-              "RelativeDocumentMoniker": "DrumkitStore\\Migrations\\20250116044938_pozmianach4.cs",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Migrations\\20250116044938_pozmianach4.cs",
-              "RelativeToolTip": "DrumkitStore\\Migrations\\20250116044938_pozmianach4.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T04:49:38.2Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Zamowienie.cs",
-              "DocumentMoniker": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Models\\Zamowienie.cs",
-              "RelativeDocumentMoniker": "DrumkitStore\\Models\\Zamowienie.cs",
-              "ToolTip": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\Models\\Zamowienie.cs",
-              "RelativeToolTip": "DrumkitStore\\Models\\Zamowienie.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T02:48:56.231Z"
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\TWNV\\Desktop\\HotelReservationApp-main\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\HotelReservationApp-main\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\TWNV\\Desktop\\HotelReservationApp-main\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "..\\..\\..\\Desktop\\HotelReservationApp-main\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-16T22:15:51.335Z",
+              "EditorCaption": ""
             }
           ]
         }

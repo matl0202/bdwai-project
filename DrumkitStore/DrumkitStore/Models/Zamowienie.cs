@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DrumkitStore.Models
 {
@@ -7,11 +8,14 @@ namespace DrumkitStore.Models
         public int Id { get; set; }
         public DateTime DataZamowienia { get; set; }
 
-        [Required(ErrorMessage = "Identyfikator użytkownika jest wymagany.")]
-        public string UserId { get; set; } = string.Empty;
+        [Required(ErrorMessage = "Brak ID użytkownika")] // kto zamowil
+        public int UserId { get; set; }
+
+        [ForeignKey("UserId")]
+        public virtual User User { get; set; }
 
         //jaki drumkit zamowilismy
-        [Required(ErrorMessage = "Drumkit jest wymagany.")]
+        [Required(ErrorMessage = "Drumkit ID jest wymagane")]
         public int DrumkitId { get; set; }
 
       

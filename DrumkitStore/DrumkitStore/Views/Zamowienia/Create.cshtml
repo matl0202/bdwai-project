@@ -1,17 +1,24 @@
 ﻿@model DrumkitStore.Models.Zamowienie
 
-<h1>Dodaj Zamówienie</h1>
+<h2>Dodaj Zamówienie</h2>
 
 @using (Html.BeginForm("Create", "Zamowienia", FormMethod.Post))
 {
+
+    @Html.ValidationSummary(true, "Popraw błedy:", new { @class = "text-danger" })
+
+
+    @Html.HiddenFor(m => m.UserId)
+
     <div class="form-group">
         <label for="DrumkitId">Drumkit</label>
         @Html.DropDownListFor(
                 m => m.DrumkitId,
                 new SelectList(ViewBag.Drumkits, "Id", "Nazwa"),
-                "Wybierz drumkit",
-                new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.DrumkitId)
+                "Wybierz Drumkit",
+                new { @class = "form-control" }
+                )
+        @Html.ValidationMessageFor(m => m.DrumkitId, null, new { @class = "text-danger" })
     </div>
 
     <button type="submit" class="btn btn-primary">Zapisz</button>

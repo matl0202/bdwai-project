@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace DrumkitStore.Controllers
 {
@@ -9,7 +10,6 @@ namespace DrumkitStore.Controllers
     {
         private readonly DrumkityDbContext _db;
 
-        //Konstruktor z dodaniem zależności
         public ZamowieniaController(DrumkityDbContext db)
         {
             _db = db;
@@ -20,42 +20,125 @@ namespace DrumkitStore.Controllers
         [Authorize]
         public ActionResult Create()
         {
-            ViewBag.Drumkits = _db.Drumkits.ToList(); //Pobranie listy drumkitów do widoku
-            return View(); 
+            ViewBag.Drumkits= _db.Drumkits.ToList(); //pobranie listy drumkitów do widoku
+            return View();
         }
 
-        // POST: /Zamowienia/Create
         [HttpPost]
         [Authorize]
-        public ActionResult Create(Zamowienie model)
+        public IActionResult Create(Zamowienie model)
         {
-            if (!ModelState.IsValid)
+
+            var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;            //pobieranie e-maila zalogowanego uzyt
+
+            if (string.IsNullOrEmpty(userEmail))
             {
-                //jesli bład walidacyjny to znow pokazuje formularz
+                ModelState.AddModelError("", "Nie można pobrac adresu e-mail");
+                ViewBag.Drumkits= _db.Drumkits.ToList();
+                return View(model);
+            }
+
+
+            var user = _db.Users.FirstOrDefault(u => u.Email == userEmail);    //znajdź użytkownika na podstawie e-maila
+            if (user== null)
+            {
+                ModelState.AddModelError("", "Nie znaleziono uzytkownika z tym adresem e-mail");
                 ViewBag.Drumkits = _db.Drumkits.ToList();
                 return View(model);
             }
 
-            //przypisanie danych do zamowienia
+            model.UserId= user.Id;
             model.DataZamowienia = DateTime.Now;
-            model.UserId = User.Identity.Name;
 
-            //dodanie naszego zamówienia do bazy danych
-            _db.Zamowienia.Add(model);
-            _db.SaveChanges();
+            if (ModelState.IsValid)
+            {
+                _db.Zamowienia.Add(model);
+                _db.SaveChanges();
+                return RedirectToAction("Index", "Zamowienia");
+            }
 
-            return RedirectToAction("MojeZamowienia");
+            ViewBag.Drumkits = _db.Drumkits.ToList();
+            return View(model);
         }
 
         [Authorize]
         public ActionResult MojeZamowienia()
         {
-            var userId = User.Identity.Name;
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            var userEmail = User.FindFirst(ClaimTypes.Name)?.Value; 
+            if (string.IsNullOrEmpty(userEmail))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            //uzytkownik na podstawie emaila
+            var user= _db.Users.FirstOrDefault(u => u.Email == userEmail);
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            //pobranie zamowienia
             var zamowienia = _db.Zamowienia
-                .Where(z => z.UserId == userId)
-                .Include(z => z.Drumkit) //wczytanie drumkitów które sa powiazane 
+                .Where(z => z.UserId == user.Id)
+                .Include(z => z.Drumkit)
                 .ToList();
+
             return View(zamowienia);
+        }
+
+        
+        [Authorize(Roles = "Admin")]
+        public IActionResult Manage()
+        {
+            var zamowienia = _db.Zamowienia.Include(z=> z.Drumkit).Include(z => z.User).ToList();
+            return View(zamowienia);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public IActionResult Delete(int id)
+        {
+            var zamowienie = _db.Zamowienia.Find(id);
+            if (zamowienie != null)
+            {
+                _db.Zamowienia.Remove(zamowienie);
+                _db.SaveChanges();
+            }
+            return RedirectToAction("Manage");
+        }
+
+        [HttpGet]
+        [Authorize(Roles = "Admin")]
+        public IActionResult Edit(int id)
+        {
+            var zamowienie = _db.Zamowienia.Include(z => z.Drumkit).FirstOrDefault(z => z.Id == id);
+            if (zamowienie == null)
+            {
+                return NotFound();
+            }
+
+            ViewBag.Drumkits = _db.Drumkits.ToList();
+            return View(zamowienie);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public IActionResult Edit(Zamowienie model)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Zamowienia.Update(model);
+                _db.SaveChanges();
+                return RedirectToAction("Manage");
+            }
+
+            ViewBag.Drumkits = _db.Drumkits.ToList();
+            return View(model);
         }
     }
 }

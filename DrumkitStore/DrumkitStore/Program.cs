@@ -3,26 +3,25 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Dodaj usługi MVC
 builder.Services.AddControllersWithViews();
 
-// Dodaj DbContext (upewnij się, że jest poprawny)
+//dodawanie bazy
 builder.Services.AddDbContext<DrumkityDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Dodaj uwierzytelnianie i autoryzację
+//uwierzytelnianie itd
 builder.Services.AddAuthentication("Cookies")
     .AddCookie("Cookies", options =>
     {
-        options.LoginPath = "/Account/Login"; // Ścieżka do strony logowania
-        options.AccessDeniedPath = "/Account/AccessDenied"; // Ścieżka, jeśli brak uprawnień
+        options.LoginPath = "/Account/Login"; //do logowania
+        options.AccessDeniedPath = "/Account/AccessDenied"; //jak brak uprawnien
     });
 
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-// Middleware
+//do errorow cos znow
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -34,11 +33,11 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthentication(); //Uwierzytelnianie
-app.UseAuthorization(); //Autoryzacja
+app.UseAuthentication();//uwierzytel
+app.UseAuthorization(); //autoryzacja
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Drumkits}/{action=Index}/{id?}");
 
 app.Run();

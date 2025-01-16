@@ -4718,11 +4718,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\DrumkitStore.csproj",
+      "projectUniqueName": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\DrumkitStore.csproj",
       "projectName": "DrumkitStore",
-      "projectPath": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\DrumkitStore.csproj",
+      "projectPath": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\DrumkitStore.csproj",
       "packagesPath": "C:\\Users\\TWNV\\.nuget\\packages\\",
-      "outputPath": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\obj\\",
+      "outputPath": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
