@@ -1,0 +1,22 @@
+﻿@model DrumkitStore.Models.Zamowienie
+
+<h2>Potwierdź zamówienie</h2>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Drumkit: @Model.Drumkit?.Nazwa</h5>
+        <p class="card-text">
+            Cena: @(Model.Drumkit?.Cena.HasValue == true
+            ? Model.Drumkit.Cena.Value.ToString("C")
+            : "Brak ceny")
+        </p>
+        <p class="card-text">Kategoria: @Model.Drumkit?.Kategoria?.Nazwa</p>
+    </div>
+</div>
+
+
+<form asp-action="ZlozZamowienie" asp-controller="Zamowienia" method="post">
+    <input type="hidden" name="DrumkitId" value="@Model.DrumkitId" />
+    <button type="submit" class="btn btn-success">Potwierdź zamówienie</button>
+    <a href="@Url.Action("Index", "Drumkits")" class="btn btn-secondary">Anuluj</a>
+</form>

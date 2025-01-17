@@ -14,8 +14,7 @@ namespace DrumkitStore.Models
         [ForeignKey("UserId")]
         public virtual User User { get; set; }
 
-        //jaki drumkit zamowilismy
-        [Required(ErrorMessage = "Drumkit ID jest wymagane")]
+        [Required(ErrorMessage = "ID dla Drumkit jest wymagane")]//jaki drumkit zamowilismy
         public int DrumkitId { get; set; }
 
       

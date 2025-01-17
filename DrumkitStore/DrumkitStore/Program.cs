@@ -21,7 +21,7 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-//do errorow cos znow
+//do errorow znow
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");

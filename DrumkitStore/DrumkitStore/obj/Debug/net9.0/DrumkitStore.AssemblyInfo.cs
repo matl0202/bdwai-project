@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DrumkitStore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e490aa6883ad69cb461eb73bbc854e3f971d659c")]
 [assembly: System.Reflection.AssemblyProductAttribute("DrumkitStore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DrumkitStore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

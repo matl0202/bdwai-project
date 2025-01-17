@@ -1,25 +1,28 @@
 ﻿@model IEnumerable<DrumkitStore.Models.Zamowienie>
 
-<h2>Moje Zamówienia</h2>
-
+<h2>Lista Zamówień</h2>
 
 <table class="table">
     <thead>
         <tr>
             <th>Id Zamówienia</th>
             <th>Data Zamówienia</th>
+            <th>Email Użytkownika</th>
+            <th>Id Użytkownika</th>
             <th>Drumkit</th>
+            <th>Cena</th>
         </tr>
     </thead>
-
-
     <tbody>
         @foreach (var zamowienie in Model)
         {
             <tr>
                 <td>@zamowienie.Id</td>
                 <td>@zamowienie.DataZamowienia.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                <td>@zamowienie.User?.Email</td>
+                <td>@zamowienie.UserId</td>
                 <td>@zamowienie.Drumkit?.Nazwa</td>
+                <td>@zamowienie.Drumkit?.Cena?.ToString("C")</td>
             </tr>
         }
     </tbody>

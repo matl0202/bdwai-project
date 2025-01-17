@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cewUQd34QJA=",
+  "dgSpecHash": "hCcLcIGBbu8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\TWNV\\source\\repos\\DrumkitStore\\DrumkitStore\\DrumkitStore.csproj",
+  "projectFilePath": "E:\\GitHubDekstop\\bdwai-project\\DrumkitStore\\DrumkitStore\\DrumkitStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TWNV\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\TWNV\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

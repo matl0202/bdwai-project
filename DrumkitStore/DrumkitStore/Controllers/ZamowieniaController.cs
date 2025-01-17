@@ -24,43 +24,6 @@ namespace DrumkitStore.Controllers
             return View();
         }
 
-        [HttpPost]
-        [Authorize]
-        public IActionResult Create(Zamowienie model)
-        {
-
-            var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;            //pobieranie e-maila zalogowanego uzyt
-
-            if (string.IsNullOrEmpty(userEmail))
-            {
-                ModelState.AddModelError("", "Nie można pobrac adresu e-mail");
-                ViewBag.Drumkits= _db.Drumkits.ToList();
-                return View(model);
-            }
-
-
-            var user = _db.Users.FirstOrDefault(u => u.Email == userEmail);    //znajdź użytkownika na podstawie e-maila
-            if (user== null)
-            {
-                ModelState.AddModelError("", "Nie znaleziono uzytkownika z tym adresem e-mail");
-                ViewBag.Drumkits = _db.Drumkits.ToList();
-                return View(model);
-            }
-
-            model.UserId= user.Id;
-            model.DataZamowienia = DateTime.Now;
-
-            if (ModelState.IsValid)
-            {
-                _db.Zamowienia.Add(model);
-                _db.SaveChanges();
-                return RedirectToAction("Index", "Zamowienia");
-            }
-
-            ViewBag.Drumkits = _db.Drumkits.ToList();
-            return View(model);
-        }
-
         [Authorize]
         public ActionResult MojeZamowienia()
         {
@@ -91,13 +54,85 @@ namespace DrumkitStore.Controllers
             return View(zamowienia);
         }
 
-        
+
         [Authorize(Roles = "Admin")]
-        public IActionResult Manage()
+        public IActionResult ListaZamowien()
         {
-            var zamowienia = _db.Zamowienia.Include(z=> z.Drumkit).Include(z => z.User).ToList();
+            var zamowienia = _db.Zamowienia
+                .Include(z => z.Drumkit)
+                .Include(z => z.User)
+                .OrderByDescending(z => z.DataZamowienia)
+                .ToList();
+
             return View(zamowienia);
         }
+
+
+
+        [HttpPost]
+        [Authorize]
+        public IActionResult ZlozZamowienie(int drumkitId)
+        {
+            var userEmail = User.FindFirst(ClaimTypes.Name)?.Value;
+
+            if (string.IsNullOrEmpty(userEmail))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            var user = _db.Users.FirstOrDefault(u => u.Email == userEmail);
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            var drumkit = _db.Drumkits.FirstOrDefault(d => d.Id == drumkitId);
+            if (drumkit == null)
+            {
+                return NotFound("Nie znaleziono danego drumkita...");
+            }
+
+            var zamowienie = new Zamowienie
+            {
+                UserId = user.Id,
+                DrumkitId = drumkitId,
+                DataZamowienia = DateTime.Now
+            };
+
+            Console.WriteLine($"Dodanie zamówienia UserId={zamowienie.UserId}, DrumkitId={zamowienie.DrumkitId}, DataZamowienia={zamowienie.DataZamowienia}"); //errory znow
+
+            if (ModelState.IsValid)
+            {
+                _db.Zamowienia.Add(zamowienie);
+                _db.SaveChanges();
+
+                TempData["SuccessMessage"] = "Twoje zamówienie zostało zatwierdzone!";
+                return RedirectToAction("MojeZamowienia", "Zamowienia");
+            }
+
+            return RedirectToAction("Index", "Drumkits");
+        }
+
+        [Authorize]
+        public IActionResult PotwierdzZamowienie(int drumkitId)
+        {
+            var drumkit = _db.Drumkits.Include(d => d.Kategoria).FirstOrDefault(d => d.Id == drumkitId);
+
+            if (drumkit == null)
+            {
+                return NotFound("Nie znaleziono drumkita");
+            }
+
+            var model = new Zamowienie
+            {
+                DrumkitId = drumkit.Id,
+                Drumkit = drumkit,
+                DataZamowienia = DateTime.Now
+            };
+
+            return View(model); 
+        }
+
 
         [HttpPost]
         [Authorize(Roles = "Admin")]

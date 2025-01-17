@@ -11,7 +11,7 @@ namespace DrumkitStore.Models
         public DbSet<Zamowienie> Zamowienia { get; set; }
         public DbSet<User> Users { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)//tworzenie na starcie bazy
         {
             //Relacja 1:n: drumkit a zamowienia
             modelBuilder.Entity<Zamowienie>()
@@ -30,7 +30,7 @@ namespace DrumkitStore.Models
             base.OnModelCreating(modelBuilder);
 
 
-            modelBuilder.Entity<User>().HasData(
+            modelBuilder.Entity<User>().HasData( //uzytkownicy na start
                 new User
                 {
                     Id= 1,

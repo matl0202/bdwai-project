@@ -62,7 +62,7 @@ namespace DrumkitStore.Controllers
             _db.Drumkits.Add(model);
             _db.SaveChanges();
 
-            Console.WriteLine("Drumkit dodany pomyślnie.");
+            Console.WriteLine("Drumkit dodany pomyślnie");
             return RedirectToAction("Index");
         }
 
@@ -103,10 +103,39 @@ namespace DrumkitStore.Controllers
             var drumkit = _db.Drumkits.Find(id);
             if (drumkit != null)
             {
+                var powiazaneZamowienia = _db.Zamowienia.Any(z => z.DrumkitId == id);
+
+                if (powiazaneZamowienia)
+                {
+                    //verify
+                    TempData["ErrorMessage"] = "Nie można usunac wybranej Paczki Dźwięków - istnieja powiązania w DB";
+                    return RedirectToAction("Index");
+                }
+
                 _db.Drumkits.Remove(drumkit);
                 _db.SaveChanges();
             }
+
             return RedirectToAction("Index");
+        }
+        [Authorize]
+        public IActionResult Kup(int id)
+        {
+            var drumkit = _db.Drumkits.Include(d => d.Kategoria).FirstOrDefault(d => d.Id == id);
+
+            if (drumkit == null)
+            {
+                return NotFound("Nie znaleziono wybranego drumkita");
+            }
+
+            var model = new Zamowienie
+            {
+                DrumkitId = drumkit.Id,
+                Drumkit = drumkit,
+                DataZamowienia = DateTime.Now
+            };
+
+            return RedirectToAction("PotwierdzZamowienie", "Zamowienia", new { drumkitId = drumkit.Id });
         }
     }
 }
